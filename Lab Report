@@ -7,10 +7,15 @@ Markdown code showing the command and its output
 [user@sahara ~]$ pwd
 /home
 [user@sahara ~]$ cd
-[user@sahara ~]$ cd lecture1/
-[user@sahara ~/lecture1]$ cd README
-bash: cd: README: Not a directory
 ```
-* The working directory was /home when the command was ran with no arguments, the working directory changed  to /lecture1 after running the command with a path to the directory argument and path as a file. 
-* When the command was ran with no arguments it didn't return any error rather remained in the same directory, when the command was ranned with a path to a directory it changed the current working directory to the path given in the argument. Although, when the command was given a file as an argument it returned an error saying the file is not a directory.
-* 
+* The working directory was /home when the command was ran with no arguments.
+* When the command was ran with no arguments it didn't return any error rather remained in the same directory. 
+
+
+
+
+
+
+the working directory changed  to /lecture1 after running the command with a path to the directory argument and path as a file. 
+when the command was ranned with a path to a directory it changed the current working directory to the path given in the argument. Although, when the command was given a file as an argument it returned an error saying the file is not a directory.
+
