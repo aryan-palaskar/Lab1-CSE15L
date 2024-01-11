@@ -37,8 +37,45 @@ bash: cd: Hello.txt: Not a directory
 [user@sahara ~]$ 
 ```
 
-* The working directory was /home when the command was ran with path to directory as argument.
+* The working directory was /home when the command was ran with path to a file as argument.
 * There was an error because the argument that we gave was a path to a directory we need to change to. 
 * The output was indeed an error because the `cd` command is meant to run on path to files but directories. 
 
+## Command `ls` 
+
+**Markdown code showing the command with *no* argument and its output**
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ ls
+Hello.txt  lecture1
+[user@sahara ~]$ 
+```
+
+* The working directory was /home when the command was ran with no argument. 
+* I got that output from the command with no arguments because since /home is the current working directory, the command will just return all the files and directories in the current directory. 
+* The output wasn't an error because the `ls` command when not provided a path would just return the contents of the current working directory. 
+
+**Markdown code showing the command with *directory* argument and its output**
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ ls lecture1
+Hello.class  Hello.java  messages  README
+[user@sahara ~]$ 
+```
+
+* The working directory was /home when the command was ran with directory argument.
+* I got the output from the command because we gave the `ls` command a path to a directory from which it should list all the files and folders. 
+* The output didn't return an error because in the working directory /home we have a folder *lecture1* whose path the ls command can access and display its contents. 
+
+**Markdown code showing the command with *file* argument and its output**
+
+``` 
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ ls Hello.txt
+Hello.txt
+```
 
