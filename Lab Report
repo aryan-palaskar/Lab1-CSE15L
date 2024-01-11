@@ -27,7 +27,18 @@
 * The working directory changed  to /lecture1 after running the command with a path to the directory as argument because thats the type of argument `cd` command is seeking, its purpose is to change directory. 
 * The output wasn't an error because we gave the `cd` a path to a directory which it was askiing. 
 
+**Markdown code showing the command with path to a *file* as argument and its output**
 
-the working directory changed  to /lecture1 after running the command with a path to the directory argument and path as a file. 
-when the command was ranned with a path to a directory it changed the current working directory to the path given in the argument. Although, when the command was given a file as an argument it returned an error saying the file is not a directory.
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cd Hello.txt
+bash: cd: Hello.txt: Not a directory
+[user@sahara ~]$ 
+```
+
+* The working directory was /home when the command was ran with path to directory as argument.
+* There was an error because the argument that we gave was a path to a directory we need to change to. 
+* The output was indeed an error because the `cd` command is meant to run on path to files but directories. 
+
 
