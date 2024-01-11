@@ -79,3 +79,6 @@ Hello.class  Hello.java  messages  README
 Hello.txt
 ```
 
+* The working directory was /home when the command was ran with file argument.
+* I got the output from the command because since the argument isn't a directory whose content can be shown, the `ls` command just lists the name of the file as is. 
+* I didn't get an error because it just ran the path to file and listed the name of the file. 
