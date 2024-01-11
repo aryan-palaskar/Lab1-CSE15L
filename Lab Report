@@ -2,18 +2,30 @@
 
 ## Command `cd`
 
-Markdown code showing the command and its output
+**Markdown code showing the command with *no* argument and its output**
 ```
 [user@sahara ~]$ pwd
 /home
 [user@sahara ~]$ cd
+[user@sahara ~]$ pwd
+/home
 ```
 * The working directory was /home when the command was ran with no arguments.
-* When the command was ran with no arguments it didn't return any error rather remained in the same directory. 
+* When the command was ran with no arguments it remained in the same directory because we didn't give it any path to change to. 
+* The output wasn't an error because the default action of the command cd when no argument is given is to return to the /home directory.
 
-
-
-
+**Markdown code showing the command with path to a *directory* as argument and its output**
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cd lecture1/
+[user@sahara ~/lecture1]$ pwd
+/home/lecture1
+[user@sahara ~/lecture1]$ 
+```
+* The working directory was /home when the command was ran with path to directory as argument.
+* The working directory changed  to /lecture1 after running the command with a path to the directory as argument because thats the type of argument `cd` command is seeking, its purpose is to change directory. 
+* The output wasn't an error because we gave the `cd` a path to a directory which it was askiing. 
 
 
 the working directory changed  to /lecture1 after running the command with a path to the directory argument and path as a file. 
