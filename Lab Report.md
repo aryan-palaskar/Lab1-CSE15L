@@ -82,3 +82,30 @@ Hello.txt
 * The working directory was /home when the command was ran with file argument.
 * I got the output from the command because since the argument isn't a directory whose content can be shown, the `ls` command just lists the name of the file as is. 
 * I didn't get an error because it just ran the path to file and listed the name of the file. 
+
+## Command `cat`
+
+**Markdown code showing the command with *no* argument and its output**
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cat
+Cat test
+Cat test
+```
+* The working directory was /home when the command was ran.
+* I got that output from the `cat` command because I didn't provide it any argument to execute so it started reading from the keyboard input and printing it back in the terminal.
+* The output isn't an error because the terminal returned any error and it might be that the `cat` command with no argument defauls to reading from the user and print it back.
+
+**Markdown code showing the command with *directory* argument and its output**
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cat lecture1
+cat: lecture1: Is a directory
+```
+* The working directory was /home when the command was ran.
+* I got that output because the `cat` command wants a file to execute as an argument and not a directory.
+* The output in the terminal was an error because it seems the `cat` command cannot run or execute on a directory.
+
