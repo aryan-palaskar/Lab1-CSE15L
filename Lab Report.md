@@ -68,7 +68,7 @@ Hello.class  Hello.java  messages  README
 
 * The working directory was `/home` when the command was ran with directory argument.
 * I got the output from the command because we gave the `ls` command a path to a directory from which it should list all the files and folders. 
-* The output didn't return an error because in the working directory `/home` we have a folder `*lecture1*` whose path the `ls` command can access and display its contents. 
+* The output didn't return an error because in the working directory `/home` we have a folder `lecture1` whose path the `ls` command can access and display its contents. 
 
 **Markdown code showing the command with *file* argument and its output**
 
