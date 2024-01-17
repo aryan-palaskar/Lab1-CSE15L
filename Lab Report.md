@@ -10,9 +10,9 @@
 [user@sahara ~]$ pwd
 /home
 ```
-* The working directory was /home when the command was ran with no arguments.
+* The working directory was `/home` when the command was ran with no arguments.
 * When the command was ran with no arguments it remained in the same directory because we didn't give it any path to change to. 
-* The output wasn't an error because the default action of the command cd when no argument is given is to return to the /home directory.
+* The output wasn't an error because the default action of the command cd when no argument is given is to return to the `/home`directory.
 
 **Markdown code showing the command with path to a *directory* as argument and its output**
 ```
@@ -23,8 +23,8 @@
 /home/lecture1
 [user@sahara ~/lecture1]$ 
 ```
-* The working directory was /home when the command was ran with path to directory as argument.
-* The working directory changed  to /lecture1 after running the command with a path to the directory as argument because thats the type of argument `cd` command is seeking, its purpose is to change directory. 
+* The working directory was `/home` when the command was ran with path to directory as argument.
+* The working directory changed  to `/lecture1` after running the command with a path to the directory as argument because thats the type of argument `cd` command is seeking, its purpose is to change directory. 
 * The output wasn't an error because we gave the `cd` a path to a directory which it was askiing. 
 
 **Markdown code showing the command with path to a *file* as argument and its output**
@@ -37,7 +37,7 @@ bash: cd: Hello.txt: Not a directory
 [user@sahara ~]$ 
 ```
 
-* The working directory was /home when the command was ran with path to a file as argument.
+* The working directory was `/home` when the command was ran with path to a file as argument.
 * There was an error because the argument that we gave was a path to a directory we need to change to. 
 * The output was indeed an error because the `cd` command is meant to run on path to files but directories. 
 
@@ -52,8 +52,8 @@ Hello.txt  lecture1
 [user@sahara ~]$ 
 ```
 
-* The working directory was /home when the command was ran with no argument. 
-* I got that output from the command with no arguments because since /home is the current working directory, the command will just return all the files and directories in the current directory. 
+* The working directory was `/home` when the command was ran with no argument. 
+* I got that output from the command with no arguments because since `/home` is the current working directory, the command will just return all the files and directories in the current directory. 
 * The output wasn't an error because the `ls` command when not provided a path would just return the contents of the current working directory. 
 
 **Markdown code showing the command with *directory* argument and its output**
@@ -66,9 +66,9 @@ Hello.class  Hello.java  messages  README
 [user@sahara ~]$ 
 ```
 
-* The working directory was /home when the command was ran with directory argument.
+* The working directory was `/home` when the command was ran with directory argument.
 * I got the output from the command because we gave the `ls` command a path to a directory from which it should list all the files and folders. 
-* The output didn't return an error because in the working directory /home we have a folder *lecture1* whose path the ls command can access and display its contents. 
+* The output didn't return an error because in the working directory `/home` we have a folder `*lecture1*` whose path the `ls` command can access and display its contents. 
 
 **Markdown code showing the command with *file* argument and its output**
 
@@ -79,7 +79,7 @@ Hello.class  Hello.java  messages  README
 Hello.txt
 ```
 
-* The working directory was /home when the command was ran with file argument.
+* The working directory was `/home` when the command was ran with file argument.
 * I got the output from the command because since the argument isn't a directory whose content can be shown, the `ls` command just lists the name of the file as is. 
 * I didn't get an error because it just ran the path to file and listed the name of the file. 
 
@@ -94,7 +94,7 @@ Hello.txt
 Cat test
 Cat test
 ```
-* The working directory was /home when the command was ran.
+* The working directory was `/home` when the command was ran.
 * I got that output from the `cat` command because I didn't provide it any argument to execute so it started reading from the keyboard input and printing it back in the terminal.
 * The output isn't an error because the terminal returned any error and it might be that the `cat` command with no argument defauls to reading from the user and print it back.
 
@@ -105,7 +105,7 @@ Cat test
 [user@sahara ~]$ cat lecture1
 cat: lecture1: Is a directory
 ```
-* The working directory was /home when the command was ran.
+* The working directory was `/home` when the command was ran.
 * I got that output because the `cat` command wants a file to execute as an argument and not a directory.
 * The output in the terminal was an error because it seems the `cat` command cannot run or execute on a directory.
 
@@ -117,6 +117,6 @@ cat: lecture1: Is a directory
 Hello!
 [user@sahara ~]$
 ```
-* The working directory was /home when the command was ran.
+* The working directory was `/home` when the command was ran.
 * I got the output because the `cat` command accepted the file as an argument and successfully ran the contents of the file.
 * I didn't get an error because we gave the `cat` command what it was asking a file to execute. 
