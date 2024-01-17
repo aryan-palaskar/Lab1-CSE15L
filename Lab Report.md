@@ -109,3 +109,14 @@ cat: lecture1: Is a directory
 * I got that output because the `cat` command wants a file to execute as an argument and not a directory.
 * The output in the terminal was an error because it seems the `cat` command cannot run or execute on a directory.
 
+**Markdown code showing the command with path to a *file* as argument and its output**
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cat Hello.txt
+Hello!
+[user@sahara ~]$
+```
+* The working directory was /home when the command was ran.
+* I got the output because the `cat` command accepted the file as an argument and successfully ran the contents of the file.
+* I didn't get an error because we gave the `cat` command what it was asking a file to execute. 
